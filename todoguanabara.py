@@ -51,3 +51,4 @@ import math
     print(f'o seno é {seno:.2f}')
     print(f'o cosseno é {math.cos(math.radians(ang)):.2f} e a tangente é {(math.tan(math.radians(ang))):.2f}')
 main()'''
+#019 sorteando um item na lista

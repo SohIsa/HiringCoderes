@@ -1,8 +1,13 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
 div {
     border: 2px solid black;
     background-color: orchid;
     width: 300px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;

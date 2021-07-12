@@ -1,0 +1,48 @@
+function sayHello(name){
+    console.log(name + " ola")
+}
+
+sayHello("isa")
+
+class Book {
+    constructor(title, pages) {
+        this.title = title;
+        this.pages = pages;
+    }
+
+    read() {
+        return `Estou lendo ${this.title}`
+    }
+}
+
+let livro = new Book ('solo leveling', 100)
+
+console.log (livro);
+console.log (livro.read());
+
+class ITBook extends Book {
+    constructor (title, pages, technology) {
+        super (title, pages);
+        this.technology = technology;
+    }
+}
+
+let tec = new ITBook ('parara', 200, "pururu")
+
+console.log(tec);
+
+class Person {
+    constructor (name) {
+        this._name = name;
+    }
+    get name() {
+        return this._name;
+    }
+    set name(value) {
+        this._name = value;
+    }
+}
+
+let person = new Person('Isa');
+person.name = "Polyana"
+console.log(person.name)

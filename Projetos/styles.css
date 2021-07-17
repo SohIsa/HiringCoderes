@@ -82,3 +82,17 @@ input {
     cursor: pointer;
     background-image: url(./assets/background.jpg);
 }
+
+.almost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'indie flower', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    background-image: url(../assets/background.jpg);
+}
+
+.icon {
+    width: 60px;    
+}

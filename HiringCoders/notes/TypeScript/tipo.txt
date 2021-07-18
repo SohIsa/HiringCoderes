@@ -20,7 +20,7 @@ const idade: number =23;
 ou
 const idade2: Array<number> = [12, 32, 53];
 //Turple
-let jogadores: [srting, string, srting];
+let jogadores: [srting, number, boolean];
 jogadores = ['asd', 23, true]   -    n pode ter mais do que o definido
 //Enum	-	mapeamento de informações
 enum statusAprovacao {

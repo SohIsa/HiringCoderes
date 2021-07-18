@@ -1,0 +1,76 @@
+# O que é?
+super set do javascript (ele adiciona coisas novas):
+	tipagem estática
+	interfaces
+	enums				poder ao JS
+	decorators
+	generics...
+browser n ler TS por isso ele é compilado para JS
+
+# Tipos
+
+//Bollean
+const contaPaga: boolean = false;
+//Number
+const idade: number =23;
+//String
+...nome: string = 'hehey'
+//Array
+...idade:number[] = [12, 32, 43];
+ou
+const idade2: Array<number> = [12, 32, 53];
+//Turple
+let jogadores: [srting, string, srting];
+jogadores = ['asd', 23, true]   -    n pode ter mais do que o definido
+//Enum	-	mapeamento de informações
+enum statusAprovacao {
+	aprovado,
+	pretendente,
+	rejeitado = '003',
+}
+const aprovação: statusAprovacao = statusAprovacao.aprovado;
+//Any	-	ele tipo aceita qualquer coisa (como anular a tipagem)
+const retornoDaAPI: any[] = ['fsa', 23, true]
+const retornoDaAPI2: any = {
+	...
+};
+//Void
+funcion printarnaTela(msg: string): void {
+console.log(msg);	-	não retorna nada por isso o void é obvio
+}
+//Null e Underfined
+const u: underfined = underfined;
+const n: null = null;
+//Object
+funcion criar(objeto: object){
+...
+}
+criar({
+propriedade:1,
+})	-	criar('asf') - dá erro
+
+//Tipo NEVER
+funcion loopInfini(): never {
+	while (true) {}
+}
+ou
+funcion erro(mensagem:string): never {
+	throw new Erro(mensagem);
+}
+...
+
+//Union Types
+quando pode ter um tipo ou outro
+funcion exibirNota(nota: number | string...) {
+	console.log(`A nota é ${nota}`);
+}
+
+//Alias - criar atalhos para os tipos
+type conjPala = Array<string>;
+const funcionarios: conjPala = ['asd', 'dad']; 	- continua no TS
+
+//Type Assertion
+const minhaIdade: any = 23
+(minhaIdade as boolean).toString(); 
+ou
+<number>minhaIdade.toString();

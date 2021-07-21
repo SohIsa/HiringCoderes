@@ -8,6 +8,9 @@ criar componentes que vão ser renderizados dentro no html
 ####    Props
 ---
 
+####    Componetes controlados
+O estado tem que ser a unica fonte de dados do seu aplicativo
+
 ### JSX 
 html dentro do JS
 
